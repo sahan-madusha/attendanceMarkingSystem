@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@100;500;600;700&display=swap');
+
+:root{
+    --HeadingText1: 'Itim', cursive;
+    --HeadingText2: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-- login page --*/
+.loginImg{
+    height: 45rem;
+}
+
+.loginUserText{
+    bottom: 0;
+    color: white;
+}
+.LoginPageHead{
+    font-family: var(--HeadingText1);
+}
+.loginInput{
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+.loginBtn{
+    color: #fff;
+    background-color: #520808;
+    border-color: #490707;
+    border-radius: 10px;
+    text-transform: capitalize;
+    
+}
+.loginBtn:hover{
+    background-color:#5a1313 ;
+    transition: 0.5s;
+}
