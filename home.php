@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IIT Student LMS - Login Page</title>
+    <title>IIT Student LMS - Home Page</title>
 
     <link rel="stylesheet" href="./style.css">
 
@@ -16,54 +16,76 @@
 <body>
 
     <!-- navigation bar -->
-    <nav class="d-flex flex-lg-row flex-column align-items-baseline justify-content-between homeNavBar p-2">
+    <?php require "./nav.php" ?>
 
-        <div class="d-flex flex-row align-items-baseline">
-            <h2 class="LoginPageHead mx-2"><i class="bi bi-mortarboard-fill"></i> IIT LMS</h2>
-            <h2 class="mx-3 menuBar d-block d-lg-none" onclick="navBar()"><i class="bi bi-list"></i></h2>
+    <!--home-->
+    <div class="text-center mt-5 mb-3 mx-5">
+        <div class="homeText my-5">
+            <h1 class="mb-4 fw-bold">My Courses</h1>
+            <p><i>Use the given links below to access your programs. You can also use the "Show All My Courses" button to view all of your enrolled courses.</i></p>
+            <button class="HomeBtn py-2 my-4 px-3 rounded-pill text-capitalize">show all my course</button>
         </div>
 
-        <!---->
-        <div id="menubar1" class="d-lg-flex d-none flex-lg-row flex-column align-items-baseline justify-content-between">
-            <!-- left side -->
-            <button class="AttendenceBtn rounded-pill boader px-3 py-1 fw-bold my-2">Attendence</button>
+        <div class="d-flex flex-column flex-md-row mx-auto my-5 homContent">
 
-            <div class="d-flex flex-row justify-content-evenly mt-1 ms-3 resNavCompo">
-                <div class="dropdown mx-3">
-                    <button class="dropbtn p-0 my-2">Recent</button>
-                    <div class="dropdown-content">
-                        <a href="#">Recent 1</a>
-                        <a href="#">Recent 2</a>
-                        <a href="#">Recent 3</a>
-                    </div>
-                </div>
-                <div class="dropdown mx-3">
-                    <button class="dropbtn p-0 my-2">Courses</button>
-                    <div class="dropdown-content">
-                        <a href="#">Courses 1</a>
-                        <a href="#">Courses 2</a>
-                        <a href="#">Courses 3</a>
-                    </div>
+            <div class="me-2 col-12 col-md-3 my-3">
+                <div class="mx-1 cardItem1 border border-primary rounded pt-3 pb-5 px-0">
+                    <img src="./src/img/notepad.png" alt="image" class="w-25 my-3">
+                    <h5>L3 Foundation 2022 SEP</h5>
+                    <p>Use this quick link to access the program</p>
+                    <a href="#">Click to Open this Course</a>
                 </div>
             </div>
 
-            <!-- left side -->
-            <div class="d-flex flex-column flex-lg-row align-items-baseline me-3">
-                <div class="mx-3 mt-1 resNavCompo ">
-                    <i class="bi bi-search"></i>
-                    <input type="text" class="rounded-pill border border-0 homeSearchBtn">
-                </div>
-                <div class="d-flex flex-row align-items-baseline resNavCompo">
-                    <i class="bi bi-bell-fill"></i>
-                    <h6 class="mx-2">P.D.G.S.M samarasinghe</h6>
-                    <img class="rounded-circle my-auto mx-auto" width="30px" height="30px" src="./src/img/userimg.png" alt="user image">
+            <div class="me-2 col-12 col-md-3 my-3">
+                <div class="mx-1 cardItem2 border border-danger rounded pt-3 pb-5 px-0"">
+                    <img src="./src/img/penImg.png" alt="image" class="w-25 my-3">
+                    <h5>L3 Foundation 2022 MAY</h5>
+                    <p>Use this quick link to access the program</p>
+                    <a href="#">Click to Open this Course</a>
                 </div>
             </div>
+
+            <div class="me-2 col-12 col-md-3 my-3">
+                <div class="mx-1 cardItem3 border border-warning rounded pt-3 pb-4 px-0">
+                    <img src="./src/img/mortarboard.png" alt="image" class="w-25 my-3">
+                    <h5>L5 2022/2023 SEP Professional Development</h5>
+                    <p>Use this quick link to access the program</p>
+                    <a href="#">Click to Open this Course</a>
+                </div>
+            </div>
+
+            <div class=" col-12 col-md-3 my-3">
+                <div class="mx-1 cardItem4 border border-info rounded pt-3 pb-5 px-0"">
+                    <img src="./src/img/graduated.png" alt="image" class="w-25 my-3">
+                    <h5>IIT Aptitude Test</h5>
+                    <p>Use this quick link to access the program</p>
+                    <a href="#">Click to Open this Course</a>
+                </div>
+            </div>
+            
         </div>
+    </div>
 
-    </nav>
+    <!--contact details-->
+    <div class="text-center my-5 mb-3 mx-5 contactDetails">
+        <h1 class="fw-bold mb-4">Contact us</h1>
+        <i class="bi bi-envelope-at-fill fs-5 me-2"></i>
+        <a href="mailto:sru@iit.ac.lk" class="fw-bold fs-4">sru@iit.ac.lk</a>
+        <br><br>
+        <i class="bi bi-telephone-fill fs-5 me-2"></i>
+        <a href="tel:+94768800888" class="fw-bold fs-5">+94 768800888</a>
+        <br><br>
+        <p><i>Do you have any questions about LMS? Please contact us as we are happy to help you anytime.</i></p>
+        <br>
+        <a href="#"><img class="instagramIcon" src="./src/img/instagram.png" alt="inst"></a>
+    </div>
 
-<script src="./script.js"></script>
+    <!-- footer -->
+    <?php require "./footer.php" ?>
+
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
